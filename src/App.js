@@ -19,7 +19,8 @@ export default function App() {
       setText(Text.slice(0,-1));
     }
     else{
-      setText(Text.concat(event.target.innerText));
+      const ans = Text + event.target.innerText;
+      setText(ans);
     } 
   }
   return (
